@@ -14,6 +14,22 @@
   Directly launch titles in the Stremio Desktop application or web player.
 </p>
 
+<p align="center">
+
+  <a href="https://github.com/NubPlayz/Stremio.Search.Wox.Plugin/releases">
+    <img src="https://img.shields.io/github/v/release/NubPlayz/Stremio.Search.Wox.Plugin?style=for-the-badge&logo=github&label=Release" alt="Latest Release">
+  </a>
+
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Wox-v2-7c3aed?style=flat-square&logo=wox&logoColor=white" alt="Wox">
+  <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Stremio-Plugin-8A2BE2?style=flat-square" alt="Stremio">
+</p>
+
+
+
 ## Usage
 
 Type the trigger keyword `sm` followed by your query:
@@ -72,3 +88,19 @@ Enable **"Require '?' for online catalog search"** in Wox Settings:
 - `sm dune`  Searches your local Stremio library only (no network requests / API calls to Cinemeta).
 - `sm dune?`  Queries the online Cinemeta catalog i.e Stremio Catalog Search. 
 
+<h2>
+  <img
+    src="https://www.google.com/s2/favicons?domain=flowlauncher.com&sz=64"
+    width="42"
+    height="42"
+    alt="Flow Launcher"
+  />
+  Stremio Search for Flow Launcher
+</h2>
+
+
+This **Stremio Search** plugin is also available for [Flow Launcher](https://www.flowlauncher.com/).
+
+The [**Github link**](https://github.com/NubPlayz/Stremio-search-flowLauncher-plugin) for Stremio Search flow.
+
+Search and launch Stremio movies and TV shows directly from Flow Launcher.
