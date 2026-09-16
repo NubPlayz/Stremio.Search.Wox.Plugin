@@ -1,0 +1,73 @@
+name: Publish Wox Release
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "plugin.json"
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    env:
+      python_ver: "3.11"
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.python_ver }}
+
+      - name: Get version
+        id: version
+        uses: notiz-dev/github-action-json-property@release
+        with:
+          path: plugin.json
+          prop_path: Version
+
+      - name: Bundle Wox SDK
+        run: |
+          python -m pip install --upgrade pip
+
+          rm -rf dependencies
+          mkdir -p dependencies
+
+          pip install "wox-plugin>=0.0.81" --target dependencies
+
+          find dependencies -type d -name "__pycache__" -prune -exec rm -rf {} +
+          find dependencies -type f -name "*.pyc" -delete
+
+      - name: Create Wox package
+        run: |
+          PKG_NAME="Wox.Plugin.StremioSearch"
+          VER="${{ steps.version.outputs.prop }}"
+
+          zip -r "${PKG_NAME}.wox" \
+            plugin.json \
+            main.py \
+            README.md \
+            plugin \
+            assets \
+            dependencies \
+            -x "*.pyc" \
+            -x "*/__pycache__/*"
+
+          cp "${PKG_NAME}.wox" "${PKG_NAME}-v${VER}.wox"
+
+      - name: Publish Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: "v${{ steps.version.outputs.prop }}"
+          name: "v${{ steps.version.outputs.prop }}"
+          files: |
+            Wox.Plugin.StremioSearch.wox
+            Wox.Plugin.StremioSearch-v${{ steps.version.outputs.prop }}.wox
+          generate_release_notes: true
+
