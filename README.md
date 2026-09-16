@@ -57,6 +57,11 @@ sm <query>
 
 <img width="805" height="576" alt="image" src="https://github.com/user-attachments/assets/6a9ba61e-08f5-473c-a676-591347aafb55" />
 
+### Settings to enable power mode
+
+<img width="594" height="261" alt="image" src="https://github.com/user-attachments/assets/f1f257bb-683a-4759-94fd-c953b31b40c3" />
+
+
 ## Features
 
 - **Instant Local & Online Search**: Seamlessly search both your personal Stremio library and the global Cinemeta catalog.
@@ -68,7 +73,7 @@ sm <query>
   - **Copy Stremio App Link**
   - **Copy Stremio Web Link**
 - **Automatic Authentication**: Discovers your local Stremio session token automatically from local storage on Windows.
-- **Power User Mode**: Optional mode requiring `?` suffix to search the online catalog (e.g. `sm dune?`), keeping plain searches strictly local.
+- **Power User Mode**: Optional mode. when turned on  requiring `?` suffix to search the online catalog (e.g. `sm dune?`), keeping plain searches strictly local.
 
 
 
@@ -103,4 +108,3 @@ This **Stremio Search** plugin is also available for [Flow Launcher](https://www
 
 The [**Github link**](https://github.com/NubPlayz/Stremio-search-flowLauncher-plugin) for Stremio Search flow.
 
-Search and launch Stremio movies and TV shows directly from Flow Launcher.
