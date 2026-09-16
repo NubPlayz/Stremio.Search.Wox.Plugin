@@ -1,0 +1,21 @@
+#cache
+__pycache__/
+*.py[cod]
+*$py.class
+library.json
+.last_sync
+
+# Build and packaging artifacts
+tests/
+dependencies/
+dist/
+*.wox
+*.zip
+
+# Environment and IDE
+.venv/
+venv/
+ENV/
+.idea/
+.vscode/
+*.tmp
