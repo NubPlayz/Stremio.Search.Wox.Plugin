@@ -1,0 +1,29 @@
+{
+  "Id": "b81045ca-d93b-4866-9e90-8e10b10f2df1",
+  "TriggerKeywords": [
+    "sm"
+  ],
+  "Name": "Stremio Search",
+  "Description": "Fast local library search & catalog lookup for Stremio",
+  "Author": "NubPlayz",
+  "Version": "1.0.1",
+  "MinWoxVersion": "2.0.0",
+  "Runtime": "python",
+  "Website": "https://github.com/NubPlayz/Stremio.Search.Wox.Plugin",
+  "Entry": "main.py",
+  "Icon": "relative:assets/icon.png",
+  "SupportedOS": [
+    "windows"
+  ],
+  "SettingDefinitions": [
+    {
+      "Type": "checkbox",
+      "Value": {
+        "Key": "require_question_mark_for_online",
+        "Label": "Require '?' for online catalog search (Power User Mode)",
+        "DefaultValue": "false",
+        "Tooltip": "When enabled, online Cinemeta search only triggers when you append '?' (e.g. sm dune?). When disabled, normal search queries both local library and online catalog."
+      }
+    }
+  ]
+}
