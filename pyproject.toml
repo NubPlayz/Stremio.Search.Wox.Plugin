@@ -1,0 +1,9 @@
+[project]
+name = "stremio-search"
+version = "1.0.0"
+description = "Fast local library search & catalog lookup for Stremio"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "wox-plugin>=0.0.81"
+]
