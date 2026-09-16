@@ -1,19 +1,18 @@
-# Stremio Search for Wox
+<h1 align="center">
+  <img
+    src="https://raw.githubusercontent.com/Stremio/stremio-brand/master/logos/PNG/stremio-logo-800px.png"
+    width="70"
+    alt="Stremio"
+  />
+  <br>
+  Stremio Search for Wox
+</h1>
 
-A fast, lightweight Wox v2 plugin for searching your local Stremio library and the Cinemeta online catalog, directly launching titles in the Stremio Desktop application or web player.
-
-## Features
-
-- **Instant Local & Online Search**: Seamlessly search both your personal Stremio library and the global Cinemeta catalog.
-- **Deep-linking to Stremio Desktop**: Press Enter to immediately open the title in the Stremio Desktop client.
-- **Comprehensive Actions**:
-  - **Open in Stremio Desktop** (Default action)
-  - **Open in Web Browser** (Launches `web.stremio.com`)
-  - **Sync Stremio Library** (Forces immediate background synchronization with your Stremio account)
-  - **Copy Stremio Link** / **Copy Web Link** (Copies shareable URL to clipboard)
-- **Automatic Authentication**: Discovers your local Stremio session token automatically from local storage on Windows.
-- **Power User Mode**: Optional mode requiring `?` suffix to search the online catalog (e.g. `sm dune?`), keeping plain searches strictly local.
-
+<p align="center">
+  A Wox plugin for searching and launching Stremio movies and TV shows.
+  <br>
+  Directly launch titles in the Stremio Desktop application or web player.
+</p>
 
 ## Usage
 
@@ -22,6 +21,42 @@ Type the trigger keyword `sm` followed by your query:
 ```text
 sm <query>
 ```
+## Screenshots
+### Search movies and shows directly from flow launcher & directly open it!
+<img width="762" height="572" alt="image" src="https://github.com/user-attachments/assets/2b8f9942-ba78-4e83-8d33-5ffee337c468" />
+
+### Click Or Enter to open it in Stremio App directly !
+
+<img width="1535" height="811" alt="image" src="https://github.com/user-attachments/assets/b7a038ba-5273-4e09-a26c-66d97ef7de72" />
+
+### Or open it in Stremio Web!
+
+<img width="1532" height="764" alt="image" src="https://github.com/user-attachments/assets/ca0dc5f0-ebed-40de-bc2c-b21185ecbc51" />
+
+### All actions
+
+<img width="362" height="444" alt="image" src="https://github.com/user-attachments/assets/c14577dd-43e1-4d63-a449-cada08fc361a" />
+
+### View your local library directly from Wox
+
+<img width="805" height="576" alt="image" src="https://github.com/user-attachments/assets/6a9ba61e-08f5-473c-a676-591347aafb55" />
+
+## Features
+
+- **Instant Local & Online Search**: Seamlessly search both your personal Stremio library and the global Cinemeta catalog.
+- **Deep-linking to Stremio Desktop**: Press Enter to immediately open the title in the Stremio Desktop client.
+- **Actions**:
+  - **Open in Stremio Desktop** (Default action)
+  - **Open in Web Browser** (Launches `web.stremio.com`)
+  - **Sync Stremio Library** 
+  - **Copy Stremio App Link**
+  - **Copy Stremio Web Link**
+- **Automatic Authentication**: Discovers your local Stremio session token automatically from local storage on Windows.
+- **Power User Mode**: Optional mode requiring `?` suffix to search the online catalog (e.g. `sm dune?`), keeping plain searches strictly local.
+
+
+
+
 
 ### Examples:
 - `sm`  Shows your local library titles or prompts to sync if empty.
