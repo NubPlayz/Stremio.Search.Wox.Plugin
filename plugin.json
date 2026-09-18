@@ -10,7 +10,7 @@
   "MinWoxVersion": "2.0.0",
   "Runtime": "python",
   "Website": "https://github.com/NubPlayz/Stremio.Search.Wox.Plugin",
-  "Entry": "main.py",
+  "Entry": "stremio_search/main.py",
   "Icon": "relative:assets/icon.png",
   "SupportedOS": [
     "windows"
