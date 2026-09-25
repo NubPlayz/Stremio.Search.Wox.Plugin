@@ -6,7 +6,7 @@
   "Name": "Stremio Search",
   "Description": "Fast local library search & catalog lookup for Stremio",
   "Author": "NubPlayz",
-  "Version": "1.0.1",
+  "Version": "1.0.2",
   "MinWoxVersion": "2.0.0",
   "Runtime": "python",
   "Website": "https://github.com/NubPlayz/Stremio.Search.Wox.Plugin",
