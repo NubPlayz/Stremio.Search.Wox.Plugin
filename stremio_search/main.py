@@ -4,7 +4,8 @@ import asyncio
 import webbrowser
 from typing import List, Optional
 
-base_dir = os.path.dirname(os.path.abspath(__file__))
+# main.py lives in a package, so climb one level to reach the plugin root.
+base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, base_dir)
 deps_dir = os.path.join(base_dir, "dependencies")
 if os.path.isdir(deps_dir) and deps_dir not in sys.path:
