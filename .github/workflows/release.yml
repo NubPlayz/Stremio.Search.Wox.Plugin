@@ -51,7 +51,7 @@ jobs:
 
           zip -r "${PKG_NAME}.wox" \
             plugin.json \
-            main.py \
+            stremio_search \
             README.md \
             plugin \
             assets \
