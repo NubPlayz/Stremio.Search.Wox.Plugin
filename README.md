@@ -38,7 +38,7 @@ Type the trigger keyword `sm` followed by your query:
 sm <query>
 ```
 ## Screenshots
-### Search movies and shows directly from flow launcher & directly open it!
+### Search movies and shows directly from Wox & directly open it!
 <img width="762" height="572" alt="image" src="https://github.com/user-attachments/assets/2b8f9942-ba78-4e83-8d33-5ffee337c468" />
 
 ### Click Or Enter to open it in Stremio App directly !
